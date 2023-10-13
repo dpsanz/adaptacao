@@ -71,6 +71,7 @@ body {
 .main {
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
     flex-direction: column;
     margin-top: 3rem;
     margin-bottom: 1rem;
@@ -98,7 +99,8 @@ body {
 }
 .main h2{
     display:flex;
-    justify-content: center ;
+    justify-content: end ;
+    align-items: end;
     flex-direction: column;
     align-items: center;
     font-family: 'Tangerine';
@@ -150,6 +152,96 @@ body {
     color: antiquewhite;
     font-size: 1.8rem;
     border-color: antiquewhite;
-    background-color: rgb(113, 64, 0);
+    background-color: rgb(107, 52, 0);
 }
 
+.section2{
+    padding: 3rem;
+
+}
+
+.pizzasdiv{
+    text-align: center;
+    color: antiquewhite;
+}
+
+.pizzasdiv h1{
+    font-family: 'Tangerine';
+    font-size: 5rem
+}
+
+.pizzasdiv p{
+    font-size: 1.5rem
+}
+
+
+.pricing {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.pricing .card {
+    padding: 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    background: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+}
+
+.pricing .card:hover{
+    background-color: #7e4612;
+    border-color: #ffffff; 
+    font-family: "Young Serif" serif;
+}
+
+.pricing .card .content{
+    flex: 1;
+    margin-bottom: 2rem;
+}
+
+.pricing .card h4{
+    margin-bottom: 1rem;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.pricing .card h3{
+    color: #fff;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 600;
+    border-bottom: 2px dashed #fff;
+}
+
+.pricing .card p{
+    color: #fff;
+    margin-bottom: 0.75rem;
+}
+
+.pricing .card p i{
+    color: #ccc;
+    font-size: 1.2rem;
+    margin-right: 0.3rem;
+}
+
+.pricing .card button{
+    font-family: 'Young Serif';
+    padding: 2rem 1rem;
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #fff;
+}
+
+.pricing .card button:hover{
+    background-color: #d8771d;
+    border-color: #d8771d;
+}
