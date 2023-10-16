@@ -259,11 +259,11 @@ body {
 }
 
 footer{
-    padding: 3rem;
     position: relative;
     display: grid;
     grid-template-columns: 400px repeat(3, 1fr);
     gap: 2rem;
+    margin: 2rem;
 }
 
 footer .column .logo img{
@@ -438,5 +438,27 @@ footer .column > a:hover{
 
     footer{
         grid-template-columns: 1fr 200px;
+    }
+}
+
+@media (width < 440px){
+    .section1 {
+        background-color: #000000;
+    }
+    header .image::before{
+        display: none;
+    }
+    header 
+
+    .features{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .pricing{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    footer{
+        grid-template-columns: 400px repeat 1 1fr;
     }
 }
